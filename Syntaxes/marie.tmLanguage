@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>mas</string>
+	</array>
+	<key>name</key>
+	<string>MARIE</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>comment.line</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Comment line ';'</string>
+			<key>match</key>
+			<string>\s?(/.*)$</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Names of instruction sets case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:jns|load|store|add|subt|input|output|halt|skipcond|jump|clear|addi|jumpi|loadi|storei)\b</string>
+			<key>name</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Names of literal types case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:dec|oct|hex|org)\b</string>
+			<key>name</key>
+			<string>storage.type</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.hex</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Decimal numbers</string>
+			<key>match</key>
+			<string>\b([0-9]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.dec</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.numeric.hex</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Exadecimal numbers format: FFF</string>
+			<key>match</key>
+			<string>\b([0-9a-fA-F]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.hex</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.mas</string>
+	<key>uuid</key>
+	<string>130e07fa-361b-473d-9c7b-0dcb7aa39e75</string>
+</dict>
+</plist>

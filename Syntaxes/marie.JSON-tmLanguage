@@ -1,0 +1,44 @@
+{   "name": "MARIE",
+    "scopeName": "source.mas",
+    "fileTypes": ["mas"],
+    "patterns": [
+    	// comments
+	    {	"name": "comment.line",
+	     	"match": "\\s?(/.*)$",
+	     	"captures": {
+	        	"1": { "name": "comment.line" }
+	     	},
+	     	"comment": "Comment line ';'"
+	    },
+		{	"name": "keyword",
+			"match": "\\b(?i:jns|load|store|add|subt|input|output|halt|skipcond|jump|clear|addi|jumpi|loadi|storei)\\b",
+			"captures": {
+				"1": { "name": "keyword" }
+			},
+			"comment": "Names of instruction sets case insensitive"
+		},
+		{	"name": "storage.type",
+			"match": "\\b(?i:dec|oct|hex|org)\\b",
+			"captures": {
+				"1": { "name": "storage.type" }
+			},
+			"comment": "Names of literal types case insensitive"
+		},
+		{	"name": "constant.numeric.dec",
+			"match": "\\b([0-9]+)\\b",
+			"captures": {
+				"1": { "name": "constant.numeric.hex" }
+			},
+			"comment": "Decimal numbers"
+		},
+
+		{	"name": "constant.numeric.hex",
+			"match": "\\b([0-9a-fA-F]+)\\b",
+			"captures": {
+				"1": { "name": "constant.numeric.hex" }
+			},
+			"comment": "Exadecimal numbers format: FFF"
+		}
+	],
+    "uuid": "130e07fa-361b-473d-9c7b-0dcb7aa39e75"
+}
