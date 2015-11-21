@@ -1,0 +1,4 @@
+{
+	"cmd": ["java", "Assembler", "$file"],
+	"selector": "source.mas"
+}
