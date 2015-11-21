@@ -11,4 +11,4 @@ Navigate with Terminal in your `Packages` folder and type
 
     git clone https://github.com/nonsane/Sublime-MARIE.git
 
-![Alt text](/screenshot.tiff?raw=true)
+![Alt text](/screenshot.jpg?raw=true)
