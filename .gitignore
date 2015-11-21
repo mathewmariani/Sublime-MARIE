@@ -1,1 +1,7 @@
 *.DS_Store
+*.java
+
+# remove example files... for now
+*.lst
+*.map
+*.mas
